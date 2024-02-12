@@ -67,8 +67,6 @@ function Nav() {
                 <Link
                   onClick={handleToggle}
                   to={link.to}
-                  exact={link.to === "/"}
-                  activeClassName="active"
                   className={
                     location.pathname === link.to
                       ? "text-blue-900 font-semibold"
