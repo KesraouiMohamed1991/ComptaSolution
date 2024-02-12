@@ -18,6 +18,10 @@ function Nav() {
   const location = useLocation();
   const [toggle, setToggle] = useState(false);
 
+  function handleToggle() {
+    setToggle(!toggle);
+  }
+
   return (
     <div className="h-16 relative p-4 sm:p-0 w-full sm:w-3/5 lg:w-4/5  mx-auto flex items-center justify-between">
       <div className="flex z-20 items-center justify-center">
@@ -43,7 +47,7 @@ function Nav() {
         ))}
       </ul>
       <div className="gap-2 hidden md:flex">
-        {socialMediaLinks.map((socialMedia, index) => (
+        {socialMediaLinks.slice(0, 2).map((socialMedia, index) => (
           <Social key={index} index={index} {...socialMedia} />
         ))}
       </div>
@@ -52,7 +56,7 @@ function Nav() {
           className="py-4 z-20 hover:scale-125 h-12 w-12"
           src={!toggle ? menu : cross}
           alt="menu icon"
-          onClick={() => setToggle(!toggle)}
+          onClick={handleToggle}
         />
       </div>
       {toggle && (
@@ -61,6 +65,7 @@ function Nav() {
             {links.map((link, index) => (
               <li key={index} className="px-4 py-2">
                 <Link
+                  onClick={handleToggle}
                   to={link.to}
                   exact={link.to === "/"}
                   activeClassName="active"

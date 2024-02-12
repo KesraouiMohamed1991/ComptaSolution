@@ -63,7 +63,7 @@ function Services() {
 
   return (
     <div className="w-full sm:w-4/5 mx-auto min-h-screen flex-col">
-      <div className="sm:py-32 py-8">
+      <div className="sm:py-16 py-8  ">
         <h1 className="text-blue-800 text-3xl font-extrabold text-center mb-4">
           Nos services
         </h1>
