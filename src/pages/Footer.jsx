@@ -12,8 +12,8 @@ const links = [
 
 function Footer() {
   return (
-    <div className="h-16 flex flex-col p-4 sm:p-0 w-full sm:w-3/5 lg:w-4/5 mx-auto  items-center justify-between">
-      <h1>ComptaSolutions</h1>
+    <div className="h-56 flex flex-col p-4 sm:p-0 w-full sm:w-3/5 lg:w-4/5 mx-auto bg-blue-50  items-center justify-evenly">
+      <h1 className="font-bold">ComptaSolutions</h1>
       <div className="flex justify-between items-center">
         <ul className="hidden sm:flex sm:justify-between items-center sm:mx-2 gap-4">
           {links.map((link, index) => (
@@ -29,6 +29,10 @@ function Footer() {
             <Social key={index} index={index} {...socialMedia} />
           ))}
         </div>
+      </div>
+      <div className="w-full flex justify-between">
+        <p>@all right reserved</p>
+        <p>created by kesraoui mohamed</p>
       </div>
     </div>
   );

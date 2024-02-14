@@ -62,12 +62,12 @@ function Services() {
   ];
 
   return (
-    <div className="w-full sm:w-4/5 mx-auto min-h-screen flex-col">
+    <div className="w-full sm:w-4/5 lg:w-4/5  mx-auto flex  min-h-screen flex-col">
       <div className="sm:py-16 py-8  ">
         <h1 className="text-blue-800 text-3xl font-extrabold text-center mb-4">
           Nos services
         </h1>
-        <p className="text-center text-2xl p-4">
+        <p className="text-center w-3/4 mx-auto text-2xl p-4">
           Experts en gestion financière offrant des solutions sur mesure pour
           votre entreprise.
         </p>

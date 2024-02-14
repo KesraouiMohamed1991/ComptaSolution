@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div className="min-h-screen w-screen flex flex-col justify-start items-center ">
-      <div className="h-1/2 w-full p-4 sm:w-2/3 flex flex-col  text-center mt-4 sm:mt-16">
+    <div className="mb-24 w-screen flex flex-col justify-start items-center ">
+      <div className=" w-full p-4 sm:w-4/5 flex flex-col   text-center mt-4 sm:mt-16">
         <p className="py-4 uppercase text-sm sm:text-lg">
           ComptaSolutions votre partenaire freelance
         </p>
