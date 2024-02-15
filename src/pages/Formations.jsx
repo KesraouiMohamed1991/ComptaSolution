@@ -32,7 +32,7 @@ function Formations() {
         <h1 className="text-blue-800 text-3xl font-extrabold text-center mb-4">
           Nos Formations
         </h1>
-        <p className="text-center w-3/4 mx-auto text-2xl p-4">
+        <p className="text-center sm:w-3/4 mx-auto text-2xl p-4">
           Nos formations sont conçues et animées par des experts en gestion
           financière, offrant des solutions sur mesure adaptées aux besoins
           spécifiques de votre entreprise.

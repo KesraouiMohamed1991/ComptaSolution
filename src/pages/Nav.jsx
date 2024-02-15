@@ -24,7 +24,7 @@ function Nav() {
 
   return (
     <div className="h-16  relative p-4  w-full md:w-5/6  mx-auto flex items-center justify-between">
-      <div className="flex z-20 items-center justify-center">
+      <div className="flex z-20 overflow-hidden items-center justify-center">
         <p className="sm:font-bold px-4 py-2 rounded-lg sm:text-lg flex items-center justify-center">
           ComptaSolutions{" "}
         </p>

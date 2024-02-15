@@ -67,7 +67,7 @@ function Services() {
         <h1 className="text-blue-800 text-3xl font-extrabold text-center mb-4">
           Nos services
         </h1>
-        <p className="text-center w-3/4 mx-auto text-2xl p-4">
+        <p className="text-center sm:w-3/4 mx-auto text-2xl p-4">
           Experts en gestion financière offrant des solutions sur mesure pour
           votre entreprise.
         </p>

@@ -6,7 +6,7 @@ function Avis({ stars, avis, job, name, img }) {
       viewBox="0 0 24 24"
       fill="orange"
       aria-hidden="true"
-      key={stars}
+      key={Math.random() * 10}
       className="h-5 w-5 text-yellow-700"
     >
       <path

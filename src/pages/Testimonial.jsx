@@ -34,9 +34,9 @@ function Testimonial() {
   return (
     <div className="w-full md:w-4/5 mx-auto flex items-center p-8 justify-center flex-col">
       <h1 className="text-blue-800 text-3xl font-extrabold text-center mb-4">
-        Témoignage
+        Témoignages
       </h1>
-      <p className="text-center w-3/4 mx-auto text-2xl p-4">
+      <p className="text-center sm:w-3/4 mx-auto text-2xl p-4">
         Plongez dans les témoignages de nos clients et découvrez pourquoi notre
         plateforme de services est votre meilleur choix !
       </p>
