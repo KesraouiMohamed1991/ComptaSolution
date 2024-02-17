@@ -1,4 +1,6 @@
 import Formation from "../components/Formation";
+import { motion } from "framer-motion";
+
 function Formations() {
   const FormationsData = [
     {
@@ -27,16 +29,26 @@ function Formations() {
   ];
 
   return (
-    <div className="w-full md:w-4/5 mx-auto min-h-screen flex-col">
+    <div className="w-full sm:w-4/5 lg:w-4/5 overflow-hidden  mx-auto min-h-screen flex-col">
       <div className="sm:py-16 py-8  ">
-        <h1 className="text-blue-800 text-3xl font-extrabold text-center mb-4">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-blue-800 text-3xl font-extrabold text-center mb-4"
+        >
           Nos Formations
-        </h1>
-        <p className="text-center sm:w-3/4 mx-auto text-2xl p-4">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-center sm:w-3/4 mx-auto text-2xl p-4"
+        >
           Nos formations sont conçues et animées par des experts en gestion
           financière, offrant des solutions sur mesure adaptées aux besoins
           spécifiques de votre entreprise.
-        </p>
+        </motion.p>
       </div>
 
       <div className="p-4">

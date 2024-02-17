@@ -4,7 +4,7 @@ import Services from "./Services";
 import Formations from "./Formations";
 function Home() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center ">
       <Hero />
       <Testimonial />
       <Services />

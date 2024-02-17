@@ -9,7 +9,7 @@ import { useState } from "react";
 const links = [
   { to: "/", label: "A propos" },
   { to: "/services", label: "Services" },
-  { to: "/creation", label: "Création d'entreprise" },
+  // { to: "/creation", label: "Création d'entreprise" },
   { to: "/Formation", label: "Formations" },
   { to: "/contact", label: "Contact" },
 ];
@@ -23,13 +23,13 @@ function Nav() {
   }
 
   return (
-    <div className="h-16  relative p-4  w-full md:w-5/6  mx-auto flex items-center justify-between">
+    <div className="h-16  relative p-4 w-full md:w-5/6 lg:w-4/5  mx-auto flex items-center justify-between">
       <div className="flex z-20 overflow-hidden items-center justify-center">
         <p className="sm:font-bold px-4 py-2 rounded-lg sm:text-lg flex items-center justify-center">
-          ComptaSolutions{" "}
+          <Link to={"/"}> ComptaSolutions </Link>
         </p>
       </div>
-      <ul className="hidden sm:flex sm:justify-evenly items-center sm:mx-2 gap-4">
+      <ul className="hidden sm:flex sm:justify-evenly items-center  gap-4">
         {links.map((link, index) => (
           <li key={index} className="px-4 py-2 text-xs sm:text-sm ">
             <Link
@@ -60,15 +60,15 @@ function Nav() {
       </div>
       {toggle && (
         <div className="h-screen z-10 w-full absolute inset-0 bg-blue-100">
-          <ul className="flex flex-col h-full w-full sm:hidden justify-center items-center">
+          <ul className="flex flex-col h-full w-full sm:hidden justify-center items-start">
             {links.map((link, index) => (
-              <li key={index} className="px-4 py-2">
+              <li key={index} className="px-4 text-blue-900 py-8 text-3xl ">
                 <Link
                   onClick={handleToggle}
                   to={link.to}
                   className={
                     location.pathname === link.to
-                      ? "text-blue-900 font-semibold"
+                      ? "text-blue-950  font-semibold"
                       : null
                   }
                 >

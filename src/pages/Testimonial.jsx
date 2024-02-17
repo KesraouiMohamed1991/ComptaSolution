@@ -1,4 +1,5 @@
 import Avis from "../components/Avis";
+import { motion } from "framer-motion";
 
 function Testimonial() {
   const testimonialInfo = [
@@ -33,23 +34,39 @@ function Testimonial() {
 
   return (
     <div className="w-full md:w-4/5 mx-auto flex items-center p-8 justify-center flex-col">
-      <h1 className="text-blue-800 text-3xl font-extrabold text-center mb-4">
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-blue-800 text-3xl font-extrabold text-center mb-4"
+      >
         Témoignages
-      </h1>
-      <p className="text-center sm:w-3/4 mx-auto text-2xl p-4">
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2, easing: "ease" }}
+        className="text-center sm:w-3/4 mx-auto text-2xl p-4"
+      >
         Plongez dans les témoignages de nos clients et découvrez pourquoi notre
         plateforme de services est votre meilleur choix !
-      </p>
+      </motion.p>
       <div className="flex w-full flex-wrap justify-center items-center gap-5 py-8">
         {testimonialInfo.map((testimonial, index) => (
-          <Avis
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 * index, easing: "ease" }}
             key={index}
-            stars={testimonial.stars}
-            name={testimonial.name}
-            job={testimonial.job}
-            avis={testimonial.testimonialText}
-            img={testimonial.imageSrc}
-          />
+          >
+            <Avis
+              stars={testimonial.stars}
+              name={testimonial.name}
+              job={testimonial.job}
+              avis={testimonial.testimonialText}
+              img={testimonial.imageSrc}
+            />
+          </motion.div>
         ))}
       </div>
     </div>

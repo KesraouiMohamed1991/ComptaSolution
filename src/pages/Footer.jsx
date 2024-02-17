@@ -12,27 +12,33 @@ const links = [
 
 function Footer() {
   return (
-    <div className="h-56 flex flex-col p-4 sm:p-0 w-full sm:w-3/5 lg:w-4/5 mx-auto bg-blue-50  items-center justify-evenly">
+    <div className="h-56 flex flex-col p-4 sm:p-0 w-full  bg-blue-50  items-center justify-evenly">
       <h1 className="font-bold">ComptaSolutions</h1>
       <div className="flex justify-between items-center">
-        <ul className="hidden sm:flex sm:justify-between items-center sm:mx-2 gap-4">
+        <ul className="hidden lg:flex sm:justify-between items-center sm:mx-2 gap-4">
           {links.map((link, index) => (
-            <li key={index} className="px-8 py-2 text-xs sm:text-sm">
+            <li
+              key={index}
+              className="px-8 py-2 border-r border-yellow-400 text-xs "
+            >
               <Link to={link.to} className="text-blue-900 font-medium">
                 {link.label}
               </Link>
             </li>
           ))}
         </ul>
-        <div className="gap-2 hidden md:flex">
+        <div className="gap-2 hidden lg:flex">
           {socialMediaLinks.map((socialMedia, index) => (
             <Social key={index} index={index} {...socialMedia} />
           ))}
         </div>
       </div>
-      <div className="w-full flex justify-between">
-        <p>@all right reserved</p>
-        <p>created by kesraoui mohamed</p>
+      <div className="w-full flex justify-between p-6">
+        <p className="text-xs">
+          @ {new Date().getFullYear()} Tous droits réservés
+        </p>
+
+        <p className="text-xs ">Designed by Kesraoui Mohamed</p>
       </div>
     </div>
   );

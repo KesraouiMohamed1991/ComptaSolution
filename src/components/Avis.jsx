@@ -1,12 +1,12 @@
 // eslint-disable-next-line react/prop-types
 function Avis({ stars, avis, job, name, img }) {
-  const starsIcons = Array(Number(stars)).fill(
+  const starsIcons = Array.from({ length: Number(stars) }, (_, index) => (
     <svg
+      key={`star-${index}`} // Use a unique key based on the index
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="orange"
       aria-hidden="true"
-      key={Math.random() * 10}
       className="h-5 w-5 text-yellow-700"
     >
       <path
@@ -15,10 +15,10 @@ function Avis({ stars, avis, job, name, img }) {
         clipRule="evenodd"
       ></path>
     </svg>
-  );
+  ));
 
   return (
-    <div className="relative  flex w-full max-w-[26rem] flex-col px-2 rounded-xl bg-blue-50 bg-clip-border text-gray-700 shadow-none">
+    <div className="relative  flex w-full max-w-[26rem] flex-col px-2 rounded-xl bg-blue-50 bg-clip-border border shadow text-gray-700 ">
       <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
         <img
           src={img}

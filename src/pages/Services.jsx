@@ -1,4 +1,5 @@
 import ServiceItem from "../components/ServiceItem";
+import { motion } from "framer-motion";
 
 function Services() {
   const servicesData = [
@@ -52,6 +53,16 @@ function Services() {
     },
 
     {
+      title: "Aide a la création d'Entreprises",
+      category: "administration",
+      description: [
+        ["Choix du régime fiscal (réel ou forfaitaire)"],
+        ["Création du statut d'auto-entrepreneur."],
+        ["Création d'entreprise simplifiée pour les professions libérales"],
+      ],
+    },
+
+    {
       title: "Consultation et Stratégie en Gestion d'Entreprise",
       category: "administration",
       description: [
@@ -64,13 +75,23 @@ function Services() {
   return (
     <div className="w-full sm:w-4/5 lg:w-4/5  mx-auto flex  min-h-screen flex-col">
       <div className="sm:py-16 py-8  ">
-        <h1 className="text-blue-800 text-3xl font-extrabold text-center mb-4">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-blue-800 text-3xl font-extrabold text-center mb-4"
+        >
           Nos services
-        </h1>
-        <p className="text-center sm:w-3/4 mx-auto text-2xl p-4">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-center sm:w-3/4 mx-auto text-2xl p-4"
+        >
           Experts en gestion financière offrant des solutions sur mesure pour
           votre entreprise.
-        </p>
+        </motion.p>
       </div>
 
       <div className="p-4">
