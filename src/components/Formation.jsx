@@ -8,7 +8,7 @@ function Formation({ formation }) {
           {formation.title}
         </h1>
       </div>
-      <div className=" w-full sm:w-2/3 p-6 rounded-b-lg sm:rounded-b-none sm:rounded-r-lg sm:border-l border-blue-100">
+      <div className=" w-full sm:w-2/3 p-6 rounded-b-lg sm:rounded-b-none sm:rounded-r-lg sm:border-l border-yellow-300">
         <ul className="list-disc rounded-md list-inside">
           {formation.description.map((desc, i) => (
             <li key={i} className="text-base  mb-2">

@@ -89,7 +89,7 @@ export const Contact = () => {
           consacrer toute mon attention aux besoins de mes clients.
         </p>
 
-        <p className="py-8 text-neutral-500"> Let&apos;s chat</p>
+        <p className="py-8 text-neutral-500"> Discutons 👋🏻</p>
         <p>comptsolutions24@gmail.com</p>
       </div>
     </div>

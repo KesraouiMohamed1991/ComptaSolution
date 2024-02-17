@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div className="mb-24 w-screen flex flex-col justify-start items-center ">
+    <div className="mb-24 mt-16 w-screen flex flex-col justify-start items-center ">
       <div className=" w-full p-4 sm:w-4/5 flex flex-col   text-center mt-4 sm:mt-16">
         <p className="py-4 uppercase text-sm sm:text-lg">
           ComptaSolutions votre partenaire freelance
@@ -13,7 +13,7 @@ function Hero() {
           financière simplifiée et efficace
         </h1>
 
-        <p className="text-sm sm:text-lg">
+        <p className="text-sm w-4/6 mx-auto sm:text-base">
           Simplifiez et optimisez la gestion administrative et financière de
           votre entreprise avec ComptaSolutions. Notre expertise en
           comptabilité, fiscalité et conseils vous offre un partenariat fiable
