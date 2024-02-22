@@ -87,7 +87,7 @@ function Services() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center sm:w-3/4 mx-auto text-2xl p-4"
+          className="text-center sm:w-3/4 mx-auto sm:text-2xl p-4"
         >
           Experts en gestion financière offrant des solutions sur mesure pour
           votre entreprise.

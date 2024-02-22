@@ -43,7 +43,7 @@ function Formations() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center sm:w-3/4 mx-auto text-2xl p-4"
+          className="text-center sm:w-3/4 mx-auto sm:text-2xl p-4"
         >
           Nos formations sont conçues et animées par des experts en gestion
           financière, offrant des solutions sur mesure adaptées aux besoins

@@ -38,7 +38,11 @@ function Footer() {
           @ {new Date().getFullYear()} Tous droits réservés
         </p>
 
-        <p className="text-xs ">Designed by Kesraoui Mohamed</p>
+        <p className="text-xs ">
+          <Link target="_blank" to={"https://kesraouicreative.com/"}>
+            Designed by Kesraoui Mohamed
+          </Link>
+        </p>
       </div>
     </div>
   );
