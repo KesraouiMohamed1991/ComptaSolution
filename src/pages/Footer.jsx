@@ -26,18 +26,18 @@ function Footer() {
             </li>
           ))}
         </ul>
-        <div className="gap-2 hidden lg:flex">
+        <div className="gap-2 flex">
           {socialMediaLinks.map((socialMedia, index) => (
             <Social key={index} index={index} {...socialMedia} />
           ))}
         </div>
       </div>
-      <div className="w-full flex justify-between p-6">
-        <p className="text-xs">
+      <div className="w-full flex justify-between gap-4 p-6">
+        <p className="w-1/2 text-xs text-end ">
           @ {new Date().getFullYear()} Tous droits réservés
         </p>
 
-        <p className="text-xs ">
+        <p className="w-1/2 text-xs ">
           <Link target="_blank" to={"https://kesraouicreative.com/"}>
             Designed by Kesraoui Mohamed
           </Link>
