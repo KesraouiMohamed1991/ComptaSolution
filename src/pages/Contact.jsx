@@ -66,7 +66,7 @@ export const Contact = () => {
         <button
           type="submit"
           disabled={disable}
-          className={`relative border mt-8 items-center justify-start inline-block px-8 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group ${
+          className={`relative border mt-8 items-center justify-start inline-block px-8 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-xl hover:bg-white group ${
             disable ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
