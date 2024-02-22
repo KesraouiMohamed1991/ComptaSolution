@@ -53,12 +53,12 @@ function Services() {
     },
 
     {
-      title: "Aide a la création d'Entreprises",
+      title: "Aide à la création d'Entreprise",
       category: "administration",
       description: [
-        ["Choix du régime fiscal (réel ou forfaitaire)"],
+        ["Choix du régime fiscal (réel ou forfaitaire)."],
         ["Création du statut d'auto-entrepreneur."],
-        ["Création d'entreprise simplifiée pour les professions libérales"],
+        ["Création d'entreprise simplifiée pour les professions libérales."],
       ],
     },
 

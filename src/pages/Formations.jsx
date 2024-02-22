@@ -8,8 +8,8 @@ function Formations() {
       description: [
         "Suivi rigoureux des transactions financières.",
         "Gestion des comptes clients et fournisseurs.",
-        "Comment faire un rapprochement bancaire et faire les analyses des comptes.",
-        "Comment comptabiliser les consommations.",
+        "Établissement un rapprochement bancaire et analyse des comptes.",
+        "Comptabiliser des consommations.",
         "Établissement des bilans comptables.",
         "Élaboration des G50.",
         "Élaboration de toutes les déclarations fiscales : IBS, IRG, TVA, et Timbre.",
@@ -22,7 +22,7 @@ function Formations() {
       description: [
         "Préparation et calcul de la paie.",
         "Déclarations sociales liées aux salariés.",
-        "Assistance dans la préparation et le dépôt des déclarations parafiscales (déclarations sociales)",
+        "Assistance dans la préparation et le dépôt des déclarations parafiscales (déclarations sociales).",
         "Suivi des cotisations sociales.",
       ],
     },

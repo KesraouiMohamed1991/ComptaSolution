@@ -37,13 +37,6 @@ function Hero() {
           >
             Nous contacter
           </Link>
-
-          <Link
-            className="px-6 py-3 my-4  mx-2 text-xs sm:text-base font-semibold rounded-lg border  border-blue-700 bg-white text-whiblue-800te "
-            to={"/services"}
-          >
-            Nos services
-          </Link>
         </motion.div>
         <span className="text-sm sm:text-lg">
           Pas de carte de crédit nécessaire ✌🏻
