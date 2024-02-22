@@ -13,7 +13,7 @@ function Hero() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="pb-16 overflow-hidden text-center text-2xl sm:text-3xl  lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-800 to-blue-900"
+          className="pb-16 overflow-hidden text-center text-2xl sm:text-5xl  lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-800 to-blue-900"
         >
           Votre partenaire de confiance pour une gestion administrative et
           financière simplifiée et efficace

@@ -5,7 +5,6 @@ import { Social } from "../components/Social.jsx";
 const links = [
   { to: "/", label: "A propos" },
   { to: "/services", label: "Services" },
-  { to: "/creation", label: "Création d'entreprise" },
   { to: "/Formation", label: "Formations" },
   { to: "/contact", label: "Contact" },
 ];
