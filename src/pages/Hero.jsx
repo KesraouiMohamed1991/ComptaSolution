@@ -23,7 +23,7 @@ function Hero() {
           Simplifiez et optimisez la gestion administrative et financière de
           votre entreprise avec ComptaSolutions. Notre expertise en
           comptabilité, fiscalité et conseils vous offre un partenariat fiable
-          pour assurer votre succès financier
+          pour assurer votre succès financier.
         </p>
         <motion.div
           initial={{ opacity: 0, y: -20, scale: 0 }}

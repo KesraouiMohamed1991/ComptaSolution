@@ -92,15 +92,13 @@ export const Contact = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="text-xl sm:text-2xl my-4 sm:my-16 font-bold"
         >
-          Vous avez un projet en tête ? <br /> Envoyez-moi les détails et
+          Vous avez un projet en tête ? <br /> Envoyez-nous les détails et
           discutons-en !
         </motion.h2>
 
         <p className="text-justify">
           Que vous souhaitiez simplement nous saluer ou que vous cherchiez à
-          démarrer un projet, n&apos;hésitez pas à m&apos;envoyer un e-mail. Je
-          ne prends jamais qu&apos;un seul projet à la fois pour pouvoir
-          consacrer toute mon attention aux besoins de mes clients.
+          démarrer un projet, n&apos;hésitez pas à nous envoyer un e-mail.
         </p>
 
         <p className="py-8 text-neutral-500">Discutons🤝 </p>
